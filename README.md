@@ -40,5 +40,12 @@ Técnicas utilizadas:
 ---
 
 ## 📂 Estrutura do Projeto
-
+/
+├── index.html
+├── css/
+│ └── style.css
+├── js/
+│ └── script.js
+└── assets/
+└── imagens, ícones e outros recursos
 
