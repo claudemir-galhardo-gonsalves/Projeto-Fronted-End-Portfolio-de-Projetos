@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Jhonas Perom Portifólio</title>
+</head>
+<body>
+    <div class="btn-inicio">
+        <a href="#box-site-page">
+            <img src="./images/btnNavInicio.png" alt="Voltar para o Início da Página" title="Voltar para o Início da Página" class="btn-nav-topo">
+        </a>
+    </div>
+
+    <div class="box-site-page" id="box-site-page">
+        <header>
+            <section class="wrap topo-page">
+                <div class="logotipo">
+                    <img src="./images/logotipoJP.png" alt="Portifólio JP Developer!" title="img-logotipoPortifólio JP Developer!" class="img-logotipo">
+                </div>
+
+                <nav class="menu-web">
+                    <!-- Menu Mobile! -->
+                     <div class="menu-mobile">
+                        <ul class="menu-one">
+                            <li class="nav-item">
+                                <a href="#" class="link-menu-mobile">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#quem-sou" class="link-menu-mobile">quem sou</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#portfolio" class="link-menu-mobile">portfólio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contato" class="link-menu-mobile">contato</a>
+                            </li>
+                        </ul>
+                        <div class="btn-hamburguer">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+
+                     <!-- Menu Desktop! -->
+                    <div class="menu-desktop">
+                        <ul class="menu-two">
+                            <li class="nav-item">
+                                <a href="#" class="link-menu-desktop">home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#quem-sou" class="link-menu-desktop">quem sou</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#portfolio" class="link-menu-desktop">portfólio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contato" class="link-menu-desktop">contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </header>
+
+        <main id="container-page">
+            <!-- 1ª Sessão Banner! -->
+            <section class="banner-page">
+                <div class="wrap">
+                    <div class="banner-grid">
+                        <div class="banner-title">
+                            <h1>
+                                <div>
+                                    <span class="nome">Jhonas Perom<span class="icone-at">!</span></span>
+                                </div>
+                                <div>
+                                    <span class="funcao">Desenvolvedor de Aplicações para Web.</span>
+                                </div>
+                                <div>
+                                    <span class="descricao">Esse é meu Portifólio, conheça um pouco mais sobre mim!</span>
+                                </div>
+                            </h1>
+                            <div class="btn-portfolio">
+                                <a href="" target="_blank" title="github" class="link-github">
+                                    <img src="./images/icones/icons-github-250.svg" alt="GitHub" title="GitHub" class="github">
+                                    GitHub
+                                </a>                              
+                                <a href="" target="_blank" title="linkedin" class="link-linkedin">
+                                    <img src="./images/icones/icons-linkedin-250.svg" alt="Linkedin" title="linkedinin" class="linkedin">    
+                                    Linkedin
+                                </a>                              
+                            </div>
+                        </div>
+
+                        <div class="banner-box-img">
+                            <img src="./images/imgBanner.jpg" alt="Apresentação de Projeto!" title="Apresentação de Projeto!" class="banner-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2ª Sessão Quem Sou! -->
+            <section class="about" id="quem-sou">
+                <div class="wrap">
+                    <h1>Quem Sou!</h1>
+                    <div>
+                        <p class="text-about">
+                            Desenvolvedor Web FullStack com experiência em HTML 5, CSS 3, Bootstrap, Javascript, 
+                            JQuery, React.js, PHP, Banco de Dados MySQL e Wordpress, também apaixonado por Tecnologia
+                            e Programação.
+                        </p>
+                    </div>
+
+                    <div class="conhecimentos">
+                        <h2>Conhecimentos e Soft Skills!</h2>
+                        <div class="box-habil">
+                            <span class="habil">HTML 5</span>
+                            <span class="habil">CSS 3</span>
+                            <span class="habil">Bootstrap</span>
+                            <span class="habil">Javascript</span>
+                            <span class="habil">JQuery</span>
+                            <span class="habil">React.js</span>
+                            <span class="habil">Node.js</span>
+                            <span class="habil">Less</span>
+                            <span class="habil">Sass</span>
+                            <span class="habil">Wordpress</span>
+                            <span class="habil">PHP Laravel</span>
+                            <span class="habil">API</span>
+                            <span class="habil">PHP</span>
+                            <span class="habil">SQL</span>
+                            <span class="habil">MySQL</span>
+                            <span class="habil">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3ª Sessão Portifólio! -->
+            <section class="projects" id="portfolio">
+                <div class="wrap">
+                    <h1>Portfólio (Projetos)!</h1>
+                    <h2>Estes são alguns dos principais Projetos Web desenvolvidos, utilizando os recursos de Front-End.</h2>
+                    <div class="grid-projects" id="projects-container">
+
+                        <!-- Laço de Repetição FOR em Javascript Nativo! -->
+                        <script>
+                            const container = document.getElementById("projects-container");
+
+                            for (let i = 1; i <= 8; i++) {
+                                container.innerHTML += `
+                                    <div class="card-projects">
+                                        <img src="./images/layoutSite.jpeg" alt="Projeto ${i}" class="img-card">
+                                        <h3>Projeto ${i} - Front-End</h3>
+                                        <p class="align-text">Informações sobre o projeto, você encontra no GitHub!</p>
+                                        <a href="#" class="link-box-projects">
+                                            <img src="./images/icones/icons-github-250.svg" alt="GitHub" class="img-github">
+                                            Repositório GitHub
+                                        </a>
+                                    </div>
+                                `;
+                            }
+                        </script>
+                        
+                        <!--  <div class="cardProjects">
+                            <img src="images/layoutSite.jpeg" alt="Projeto de Site!" title="Projeto de Site!" class="imgCard">
+                            <h3>Projeto 1 - Front-End.</h3>
+                            <p>Informações do projeto você encontra no GitHub!</p>
+                            <a href="" class="linkBoxProjects">
+                                <img src="images/icones/icons-github-250.svg" alt="GitHub" title="GitHub" class="imgGitHub">
+                                Repositório GitHub
+                            </a>
+                        </div> -->
+
+                    </div>
+                </div>
+            </section> 
+         
+            <!-- 4ª Sessão Contato! -->
+            <section class="contact" id="contato">
+                <div class="wrap">
+                    <div class="align-contact">
+                        <h1>Contato!</h1>
+                    </div>       
+                    <div class="box-contact">
+                        <div class="info-contact">
+                            <div class="align-text-contact">
+                                <p>Tire todas as suas dúvidas sobre os nossos serviços ou realize um orçamento.</p>
+                                <p>Estes são os nossos principais meios de contato:</p>                  
+                            </div> 
+                            <div>
+                                <ul class="ul-contact">
+                                    <li class="list-ct">
+                                        <img src="./images/icones/iconsEmail.png" alt="E-mail!" title="E-mail!" class="icon-ct">
+                                        <span>contato@jpportifolio.com.br</span>
+                                    </li>
+                                    <li class="list-ct">
+                                        <img src="./images/icones/iconsTelefone.png" alt="Telefone" title="Telefone" class="icon-ct">
+                                        <span>(43) 0000-0000</span>
+                                    </li>
+                                    <li class="list-ct">
+                                        <img src="./images/icones/iconsWhatsapp.png" alt="Whatsapp!" title="Whatsapp!" class="icon-ct">
+                                        <a href="https://api.whatsapp.com/send?phone=5511900000000" target="_blank" class="link-whatsapp" alt="Clique aqui para iniciar uma conversa!" title="Clique aqui para iniciar uma conversa!">
+                                            <span>(43) 9 0000-0000</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-ct">
+                                        <img src="./images/icones/iconsLocalizacao.png" alt="Localização!" title="Localização!" class="icon-ct">
+                                        <span>Avenida Teste Nº001, CEP00000000 Londrina - PR.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Metodo POST: Envia os dados de forma oculta (Segurança dos dados). -->
+                        <!-- Metodo GET: Envia os dados sempre para a URL do navegador. -->
+                        <!-- Caso não seja especificado o metodo de envio no form, ele será nativamente GET. -->
+
+                        <div class="form-contact">
+                            <form action="index.html" method="GET" name="form" onsubmit="return ValidarCamposFormulario();">
+                                <label>Digite seu Nome:</label>
+                                <input type="text" name="nome" id="nome" placeholder="Digite seu Nome aqui..." class="camp-form">
+
+                                <label>Digite seu E-mail:</label>
+                                <input type="email" name="email" id="email" placeholder="Digite seu E-mail aqui..." class="camp-form">
+
+                                <label>Digite seu Telefone:</label>
+                                <input type="text" name="tele" id="tele" placeholder="Digite seu Telefone aqui..." class="camp-form">
+
+                                <label>Digite seu Assunto:</label>
+                                <input type="text" name="ass" id="ass" placeholder="Digite seu Assunto aqui..." class="camp-form">
+
+                                <label>Digite sua Mensagem:</label>
+                                <textarea name="msg" id="msg" placeholder="Digite sua Mensagem aqui..." class="camp-form-msg"></textarea>
+
+                                <div class="box-btn">
+                                    <button type="submit" name="btnEnviar" class="btn-enviar" title="Envie sua Mensagem!">enviar</button>
+                                    <button type="reset" name="btnEnviar" class="btn-limpar" title="Limpe todos os Campos!">limpar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-contact">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3663.8973483269374!2d-51.17892302541572!3d-23.319482952749112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eb4313ff0ee975%3A0x1c33d6cf3ae5b478!2sWMBarros%20Treinamento%20em%20TI%20Cursos%20de%20Programa%C3%A7%C3%A3o%2C%20Front-end%2C%20Cria%C3%A7%C3%B5es%20de%20Sites%3A%20TUDO%20NA%20PR%C3%81TICA%20-%20PRESENCIAL%20E%20REMOTO!5e0!3m2!1spt-BR!2sbr!4v1759579480221!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+        </main>
+
+        <footer id="end-page">
+            <section class="rs-footer">
+                <div class="wrap">
+                    <h1 class="title-footer">Redes Sociais</h1>
+                    <div class="rs-icons">
+                        <a href="" target="_blank" class="link-rs">
+                            <img src="./images/icones/iconsLinkedin.png" alt="Linkedin" title="Linkedin" class="img.icon">
+                        </a>
+                        <a href="" target="_blank" class="link-rs">
+                            <img src="./images/icones/iconsGithub.png" alt="GitHub" title="GitHub" class="img.icon">
+                        </a>
+                        <a href="" target="_blank" class="link-rs">
+                            <img src="./images/icones/iconsYoutube.png" alt="Youtube" title="Youtube" class="img.icon"> 
+                        </a>
+                        <a href="" target="_blank" class="link-rs">
+                            <img src="./images/icones/iconsFacebook.png" alt="Facebook" title="Facebook" class="img.icon">
+                        </a>
+                        <a href="" target="_blank" class="link-rs">
+                            <img src="./images/icones/iconsInstagram.png" alt="Instagram" title="Instagram" class="img.icon">
+                        </a>
+                        <a href="" target="_blank" class="link-rs">
+                            <img src="./images/icones/iconsBehance.png" alt="Behance" title="Behance" class="img.icon">
+                        </a>                 
+                    </div>
+                </div>
+            </section>
+
+            <section class="copy">
+                <div class="wrap">
+                    <div class="info-copy">
+                        <p>Todos os direitos reservados 2025</p>
+                        <a href="#top">
+                            <img src="./images/logotipoJP.png" alt="JP Portifólio" title="JP Portifólio" class="logotipo-copy">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    
+    <!-- Importação de Arquivos Javascript. -->  
+    <script src="./js/menu.js"></script>
+    <script src="./js/validar-campos.js"></script>
+    <script src="./js/mask-campos.js"></script>  
+</body>
+</html>

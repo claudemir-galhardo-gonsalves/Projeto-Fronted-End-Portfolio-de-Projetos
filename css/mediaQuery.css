@@ -1,0 +1,281 @@
+/* Arquivo CSS Nativo de Funções de Responsividade! */
+
+/* Resolução 320px até 568px: Celulares de resolução baixa. */
+/* Resolução 568px até 768px: Celulares de resolução alta. */
+/* Resolução 768px até 992px/998px: Resolução de Tablet. */
+/* Resolução 992px/998px e superiores: Notebook e Desktop. */
+
+/* Função para Notebook e Desktop.. */
+@media screen and (min-width: 998px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-two {
+        display: flex;
+        gap: 0.7rem;
+    }
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .link-menu-desktop {
+        text-decoration: none;
+        color: var(--cor-txt-header);
+    }
+
+    .link-menu-desktop:hover {
+        color: var(--cor-txt-header-hover);
+    }
+
+    .banner-page {
+        padding: 1.4rem 0rem;
+        font-family: var(--font-text-banner);
+        background-color: var(--cor-bg-banner);
+        color: var(--cor-text-banner);
+    }
+
+    .about {
+        padding: 1.4rem 0rem;
+        text-align: center;
+        font-family: var(--font-text-sobre);
+        background-color: var(--cor-bg-sobre);
+        color: var(--cor-txt-sobre);
+    }
+
+    .projects {
+        padding: 1.4rem 0rem;
+        text-align: center;
+        background-color: var(--cor-bg-portfolio);
+        color: var(--cor-txt-portfolio);
+        font-family: var(--font-text-portfolio);
+    }
+
+    .banner-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .btn-portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.2rem;
+    }
+
+    .about h1 {
+        font-family: var(--font-title-sobre);
+    }
+
+    .about h2 {
+        font-family: var(--font-sub-title-sobre);
+    }
+
+    .projects h1 {
+        font-family: var(--font-title-portfolio);
+    }
+
+    .grid-projects {
+        padding: 0.3rem 0.6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+    .img-card {
+        width: 100%;
+        max-width: 306px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .box-contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 1.2rem;
+    }
+
+    .align-text-contact{
+        text-align: left;
+    }
+
+    .img.icon{
+        width: 55px;
+    }
+}
+
+/* Função para Celulares e Tablets.. */
+@media screen and (max-width: 998px) {  
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-one {
+        width: 100%;
+        text-align: center;
+        left: -140%;
+        top: -16px;
+        padding: 4rem 0rem;
+        position: absolute;
+        background-color: #fd2600;
+        background-color: var(--cor-bg-header-mobile);
+    }    
+
+    .menu-one.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1rem 0rem;
+        list-style: none;
+    }
+
+    .link-menu-mobile {
+        text-decoration: none;
+        color: var(--cor-txt-header-mobile);
+    }
+
+    .bar {
+        width: 28px;
+        height: 3px;
+        display: block;
+        border-radius: 3px;
+        margin: 5px auto;
+        background-color: #000000;
+        transition: all 0.3rem ease-in-out;
+    }
+
+    .btn-hamburguer {
+        cursor: pointer;
+        display: block;
+    }
+
+    /* nth:child: Este comando nativo do CSS faz parte de uma biblioteca de recursos de animações de linguagem. */
+    /* Utilizado para manipular movimentos de elementos, tags e conteúdos no HTML! */
+
+    .btn-hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .btn-hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .btn-hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .banner-page {
+        padding: 1rem;
+        text-align: center;
+        font-family: var(--font-text-banner);
+        background-color: var(--cor-bg-banner);
+        color: var(--cor-txt-banner);
+    }
+
+    .about {
+        padding: 1rem;
+        text-align: center;
+        font-family: var(--font-text-sobre);
+        background-color: var(--cor-bg-sobre);
+        color: var(--cor-txt-sobre);
+    }
+
+    .projects {
+        padding: 1.4rem 0rem;
+        text-align: center;
+        background-color: var(--cor-bg-portfolio);
+        color: var(--cor-txt-portfolio);
+        font-family: var(--font-text-portfolio);
+    }
+
+    .btn-portifolio {
+        display: grid;
+        justify-content: center;
+    }
+
+    .about h1 {
+        font-family: var(--font-title-sobre);
+    }
+
+    .about h2 {
+        font-family: var(--font-sub-title-sobre);
+    }
+
+    .projects h1 {
+        font-family: var(--font-title-portfolio);
+    }
+
+    .grid-projects {
+        padding: 0.3rem 0.6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+    .img-card {
+        width: 100%;
+        max-width: 306px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .align-text-contact{
+        text-align: center;
+    }
+
+    .img.icon{
+        width: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-projects {
+        padding: 0.3rem 0.6rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+    }
+
+    .img-card {
+        width: 100%;
+        max-width: 364px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    form{
+        padding: 1rem;
+    }
+    
+    .grid-projects {
+        padding: 0.3rem 0.6rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .img-card {
+        width: 100%;
+        max-width: 549px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    
+    .info-copy{
+        border-top: 1px solid #ffffff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img.icon{
+        width: 35px;
+    }
+
+    .align-text-contact{
+        padding: 0.4rem 1rem;
+    }
+}

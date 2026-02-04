@@ -1,0 +1,357 @@
+/* Importações de Camadas do Projeto em CSS! */
+@import url(./fonts.css);
+@import url(./variables.css);
+@import url(./mediaQuery.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+form {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+}
+
+#end-page {
+    text-align: center;
+    background-color: var(--cor-bg-footer);
+    color: var(--cor-txt-footer);
+    font-family: var(--font-text-footer);
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+}
+
+/* --- Formatações de Imagens --- */
+.btn-nav-topo {
+    width: 60px;
+    transition: .4s;
+}
+
+.btn-nav-topo:hover {
+    transform: scale(1.1);
+}
+
+.img-logotipo {
+    width: 170px;
+}
+
+.github,
+.linkedin {
+    width: 65px;
+}
+
+.banner-img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 50%;
+    margin: 2.4rem 0rem;
+    transition: transform .2s;
+}
+
+.banner-img:hover {
+    transform: scale(1.1);
+}
+
+/* Fim das Formatações de Imagens */
+
+.btn-inicio {
+    margin: 0rem 0.6rem 0.6rem 0rem;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+
+.btn.nav.topo {
+    width: 60px;
+    transition: 4s;
+    opacity: 30%;
+    border-radius: 50%;
+}
+
+.btn.nav.topo:hover {
+    transform: scale(1.1);
+    opacity: 100%;
+}
+
+.topo-page {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-family: var(--font-text-header);
+    text-transform: uppercase;
+}
+
+.menu-web {
+    padding-right: 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+.nome {
+    font-family: var(--font-title-banner);
+    font-size: 4rem;
+}
+
+.funcao {
+    font-family: var(--font-sub-title-banner);
+    font-size: 1.8rem;
+}
+
+.descricao {
+    font-family: var(--font-text-banner);
+    font-size: 1.1rem;
+}
+
+.link-github,
+.link-linkedin {
+    height: 30px;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: var(--font-sub-title-banner);
+    color: #000000;
+    padding: 1.6rem 0.4rem;
+    margin: 0.1rem;
+    border: 3.8px #ff6347 solid;
+    border-radius: 4px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.link-github:hover,
+.link-linkedin:hover {
+    border: 5px #ff6347 solid;
+    transform: scale(1.02);
+}
+
+.banner-box-img {
+    display: flex;
+    justify-content: center;
+}
+
+.box-habil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.habil {
+    padding: 12px;
+    font-size: 0.8rem;
+    border: 3px #000000 solid;
+    border-radius: 18px;
+    background-color: #d7d7d7;
+    color: #000000;
+    cursor: default;
+    box-shadow: 1px 1px 4px #000000;
+}
+
+.habil:hover {
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+.card-projects {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    font-family: var(--font-sub-title-portfolio);
+}
+
+.img-github {
+    width: 26px;
+}
+
+.link-box-projects {
+    font-size: 1.2rem;
+    color: var(--cor-txt-btn);
+    text-decoration: none;
+    padding: 1rem;
+    border: 2px solid var(--laranja-prj-1);
+    margin: 0.6rem;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 2px 2px 3px #000000;
+}
+
+.link-box-projects:hover {
+    background-color: var(--cor-bg-btn);
+    border-color: var(--cor-border-btn);
+}
+
+.contact {
+    padding-top: 1rem;
+    text-align: center;
+    font-family: var(--font-text-footer);
+    background-color: var(--cor-bg-contato);
+    color: var(--cor-txt-contato);
+}
+
+.align-contact {
+    font-family: var(--font-title-contato);
+}
+
+.list-ct {
+    margin-bottom: 1.4rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.ul-contact {
+    padding: 0.6rem;
+    text-align: left;
+}
+
+.icon-ct {
+    width: 20px;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px #000000;
+    transition: 0.4s;
+}
+
+.icon-ct:hover {
+    transform: scale(1.1);
+}
+
+.link-whatsapp {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link-whatsapp:hover {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 0.4rem;
+    border-radius: 4px;
+}
+
+.camp-form {
+    width: 100%;
+    height: 34px;
+    font-family: var(--font-sub-title-contato);
+    font-size: 0.7rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1.2rem;
+    padding-left: 4px;
+    box-shadow: 2px 2px 8px #000000;
+}
+
+.camp-form-msg {
+    width: 100%;
+    height: 90px;
+    font-family: var(--font-sub-title-contato);
+    font-size: 0.7rem;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 1.2rem;
+    padding-left: 4px;
+    box-shadow: 2px 2px 8px #000000;
+}
+
+.camp-form:hover,
+.camp-form-msg:hover {
+    border: 2px solid #000000;
+}
+
+.box-btn {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-enviar {
+    width: 120px;
+    height: 34px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px #000000;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-limpar {
+    width: 120px;
+    height: 34px;
+    text-transform: uppercase;
+    background-color: #ffe100;
+    color: #000000;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 8px #000000;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.btn-enviar:hover {
+    background-color: #005404;
+}
+
+.btn-limpar:hover {
+    background-color: #f40000;
+    color: #ffffff;
+}
+
+.map-contact {
+    background-color: #000000;
+}
+
+.title-footer {
+    font-family: var(--font-title-footer);
+}
+
+.logotipo-copy {
+    width: 32px;
+}
+
+.rs-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.link-rs {
+    text-decoration: none;
+    transition: .4s;
+}
+
+.link-rs:hover {
+    transform: scale(1.1);
+}
+
+.info-copy {
+    border-top: 1px solid #ffffff;
+    display: flex;
+   justify-content: space-between;
+}

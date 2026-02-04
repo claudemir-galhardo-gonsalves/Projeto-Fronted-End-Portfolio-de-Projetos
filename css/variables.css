@@ -1,0 +1,55 @@
+:root{
+
+    /* Coloração Padrão do Projeto */
+    --laranja-prj-1: #fd2600;
+    --laranja-prj-2: #fd6100;
+
+    /* Variáveis: Header: */
+    --font-title-header: Poppins-Medium;
+    --font-sub-title-header: Poppins-Light;
+    --font-text-header: Montserrat-Medium;
+    --cor-bg-header: #ffffff;
+    --cor-bg-header-mobile: var(--laranja-prj-1);
+    --cor-txt-header: #000000;
+    --cor-txt-header-mobile: #ffffff;
+    --cor-txt-header-hover: var(--laranja-prj-1);
+    
+    /* Variáveis: Banner: */
+    --font-title-banner: Poppins-Medium;
+    --font-sub-title-banner: Poppins-Light;
+    --font-text-banner: Montserrat-Medium;
+    --cor-bg-banner: #000000;
+    --cor-txt-banner: #ffffff;
+    
+    /* Variáveis: Quem Sou: */
+    --font-title-sobre: Poppins-Medium;
+    --font-sub-title-sobre: Poppins-Light;
+    --font-text-sobre: Montserrat-Medium;
+    --cor-bg-sobre: var(--laranja-prj-1);
+    --cor-txt-sobre: #ffffff;
+    
+    /* Variáveis: Portfólio: */
+    --font-title-portfolio: Poppins-Medium;
+    --font-sub-title-portfolio: Poppins-Light;
+    --font-text-portfolio: Montserrat-Medium;
+    --cor-bg-portfolio: #000000;
+    --cor-txt-portfolio: #ffffff;
+    --cor-txt-btn: #000000;
+    --cor-bg-btn: #efefef;
+    --cor-border-btn: var(var(--laranja-prj-1));
+
+    /* Variáveis: Contato: */
+    --font-title-contato: Poppins-Medium;
+    --font-sub-title-contato: Poppins-Light;
+    --font-text-contato: Montserrat-Medium;
+    --cor-bg-contato: var(--laranja-prj-1);
+    --cor-txt-contato: #ffffff;
+    
+    /* Variáveis: Footer: */
+    --font-title-footer: Poppins-Medium;
+    --font-sub-title-footer: Poppins-Light;
+    --font-text-footer: Montserrat-Medium;
+    --cor-bg-footer: #000000;
+    --cor-txt-footer: #ffffff;
+
+}
